@@ -939,6 +939,7 @@ h6 {
         -ms-flex-pack: end;
             justify-content: flex-end;
     padding-bottom: 1.75rem;
+    padding-top: 0;
   }
 
   .hero__content {
