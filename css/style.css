@@ -420,6 +420,10 @@ h6 {
   transition: top 0.5s ease 0s;
 }
 
+.header._header-scroll {
+  top: 0;
+}
+
 .header__container {
   display: -webkit-box;
   display: -ms-flexbox;
