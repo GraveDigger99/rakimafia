@@ -845,6 +845,14 @@ h6 {
 }
 
 @media (max-width: 29.99875em) {
+  [data-fullscreen] {
+    min-height: 100vh;
+  }
+
+  .touch [data-fullscreen] {
+    min-height: calc(var(--vh, 1vh) * 100);
+  }
+
   .shopping-cart-icon {
     background: #445371;
     --size: 20px;
@@ -930,7 +938,6 @@ h6 {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
-    min-height: 100vh;
     padding-bottom: 1.75rem;
   }
 
@@ -953,6 +960,13 @@ h6 {
     -webkit-box-flex: 1;
         -ms-flex: 1 1 auto;
             flex: 1 1 auto;
+  }
+}
+
+@media (max-width: 29.99875em) and (max-width: 47.99875em) {
+  .touch [data-fullscreen] {
+    -webkit-transition: height 0.2s;
+    transition: height 0.2s;
   }
 }
 
