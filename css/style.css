@@ -1787,6 +1787,7 @@ h6 {
   display: -ms-flexbox;
   display: flex;
   position: fixed;
+  z-index: 100;
   bottom: 2rem;
   right: 2rem;
   width: 23.4375rem;
