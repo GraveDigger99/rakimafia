@@ -5,7 +5,7 @@
 	<title>HomePage</title>
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
-	<link rel="stylesheet" href="css/style.min.css?_v=20240311113912">
+	<link rel="stylesheet" href="css/style.min.css?_v=20240312144449">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
@@ -68,7 +68,7 @@
 				</div>
 			</div>
 		</header>
-		<main class="page">
+		<main class="page page_home">
 			<section data-fullscreen class="hero">
 				<div class="hero__container">
 					<div class="hero__content">
@@ -591,6 +591,24 @@
 					</div>
 				</div>
 			</section>
+			<div class="notification-block">
+				<div class="notification-block__icon">
+					<img src="img/notifications/icon.svg" alt="icon">
+				</div>
+				<div class="notification-block__body">
+					<div class="notification-block__title">Товар добавлен в корзину</div>
+					<a href="#" class="notification-block__link">Перейти в корзину</a>
+					<a href="#" class="notification-block__shopping">
+						<span aria-label="icon: shopping-cart" class="shopping-icon-notification" style="--icon: url(../img/icons/shopping-cart.svg)"></span>
+						Корзина
+					</a>
+				</div>
+				<button type="button" class="notification-block__close">
+					<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path fill-rule="evenodd" clip-rule="evenodd" d="M10.9399 12.0006L6.84839 16.0921L7.90905 17.1527L12.0005 13.0612L16.092 17.1527L17.1527 16.0921L13.0612 12.0006L17.1527 7.90905L16.092 6.84839L12.0005 10.9399L7.90906 6.84839L6.8484 7.90905L10.9399 12.0006Z" fill="#445371" />
+					</svg>
+				</button>
+			</div>
 		</main>
 		<footer class="footer">
 			<div class="footer__container">
@@ -645,7 +663,7 @@
 		</div>
 	</div>
 </div> -->
-	<script src="js/app.min.js?_v=20240311113912"></script>
+	<script src="js/app.min.js?_v=20240312144449"></script>
 </body>
 
 </html>
