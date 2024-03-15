@@ -3082,6 +3082,14 @@ h6 {
     gap: 0.625rem;
   }
 
+  .notification-block {
+    right: 0;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+        -ms-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+  }
+
   .articles {
     padding: 2rem 0;
   }
@@ -3357,10 +3365,6 @@ h6 {
     height: 10.375rem;
   }
 
-  .notification-block {
-    width: 320px;
-  }
-
   .articles-banner_desktop {
     display: none;
   }
@@ -3478,6 +3482,24 @@ h6 {
 @media (max-width: 29.99875em) and (any-hover: hover) {
   .shopping-cart-icon:hover {
     background-color: var(--main-red-hover2);
+  }
+}
+
+@media (max-width: 23.25em) {
+  .row-content__items {
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .basket__items {
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 23.4375em) {
+  .notification-block {
+    width: 320px;
   }
 }
 
