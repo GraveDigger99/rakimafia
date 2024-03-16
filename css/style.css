@@ -1313,6 +1313,169 @@ h6 {
   transition: background 0.5s ease 0s;
 }
 
+.spoller-row__title {
+  font-weight: 600;
+  font-size: 1rem;
+  width: 100%;
+  line-height: 162%;
+  color: var(--main-grey);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 0.625rem;
+  -webkit-transition: color 0.5s ease 0s;
+  transition: color 0.5s ease 0s;
+}
+
+.spoller-row__title::after {
+  content: "";
+  background: url("../img/icons/arrow-spoller.svg") center center no-repeat;
+  width: 0.6875rem;
+  height: 0.375rem;
+  -webkit-transition: -webkit-transform 0.5s ease 0s;
+  transition: -webkit-transform 0.5s ease 0s;
+  transition: transform 0.5s ease 0s;
+  transition: transform 0.5s ease 0s, -webkit-transform 0.5s ease 0s;
+}
+
+.spoller-row__title._spoller-active::after {
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.spoller-row__body {
+  padding-top: 0.75rem;
+  padding-left: 8px;
+}
+
+.spoller-row__list li {
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 162%;
+  color: var(--main-grey);
+}
+
+.spoller-row__list li a {
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 162%;
+  color: var(--main-grey);
+}
+
+.filter-block:not(:last-child) {
+  margin-bottom: 2.5rem;
+}
+
+.filter-block__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.625rem;
+}
+
+.filter-block__list:not(:last-child) {
+  margin-bottom: 0.625rem;
+}
+
+.filter-block__list li {
+  font-weight: 600;
+  font-size: 0.875rem;
+  line-height: 186%;
+  color: var(--main-grey);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.625rem;
+}
+
+.filter-block__list li:first-child {
+  font-weight: 600;
+  font-size: 0.875rem;
+  line-height: 186%;
+  color: #0e1117;
+}
+
+.filter-block__list li:not(:last-child)::after {
+  content: "";
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: var(--main-grey);
+}
+
+.filter-block__sort {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  gap: 1.25rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #f6f6f6;
+  border-radius: 0.625rem;
+  padding: 0.9375rem 1.25rem;
+}
+
+.filter-block__label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 162%;
+  color: #0e1117;
+  gap: 0.625rem;
+}
+
+.filter-block__button {
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 162%;
+  color: var(--main-grey);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: color 0.5s ease 0s;
+  transition: color 0.5s ease 0s;
+  gap: 0.625rem;
+}
+
+.filter-block__button.active::before {
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.filter-block__button::before {
+  content: "";
+  width: 0.5rem;
+  -webkit-transition: -webkit-transform 0.5s ease 0s;
+  transition: -webkit-transform 0.5s ease 0s;
+  transition: transform 0.5s ease 0s;
+  transition: transform 0.5s ease 0s, -webkit-transform 0.5s ease 0s;
+  height: 0.4375rem;
+  background: url("../img/icons/sort-icon.svg") center center no-repeat;
+}
+
 .header {
   padding: 1.25rem 0;
   position: fixed;
@@ -2095,6 +2258,10 @@ h6 {
   gap: 1.5rem;
 }
 
+.other-articles__items:not(:last-child) {
+  margin-bottom: 2.5rem;
+}
+
 .other-articles__image {
   border-radius: 0.9375rem;
 }
@@ -2128,6 +2295,26 @@ h6 {
   font-size: 1.125rem;
   line-height: 144%;
   color: var(--main-grey);
+}
+
+.other-articles__actions {
+  text-align: center;
+}
+
+.other-articles__button {
+  display: inline-block;
+  font-weight: 600;
+  font-size: 1rem;
+  text-align: center;
+  -webkit-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+  color: var(--main-white);
+  -webkit-box-shadow: inset 0 0 0 0 rgba(0, 0, 0, 0);
+          box-shadow: inset 0 0 0 0 rgba(0, 0, 0, 0);
+  background: var(--main-red-default);
+  border: 0.125rem solid rgba(255, 255, 255, 0);
+  border-radius: 0.375rem;
+  padding: 0.875rem 1.25rem;
 }
 
 .contacts-banner img {
@@ -2625,6 +2812,10 @@ h6 {
     font-size: 2.5rem;
   }
 
+  .filter-block:not(:last-child) {
+    margin-bottom: 1.25rem;
+  }
+
   .header__container {
     gap: 1.875rem;
   }
@@ -2848,6 +3039,22 @@ h6 {
     -webkit-transform: rotate(180deg);
         -ms-transform: rotate(180deg);
             transform: rotate(180deg);
+  }
+
+  .filter-block:not(:last-child) {
+    margin-bottom: 0.625rem;
+  }
+
+  .filter-block__sort {
+    padding: 0.75rem;
+  }
+
+  .filter-block__sort {
+    width: 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    gap: 0.625rem;
   }
 
   .header {
@@ -3127,6 +3334,15 @@ h6 {
   .other-articles__items {
     -ms-grid-columns: none;
     grid-template-columns: none;
+  }
+
+  .other-articles__items:not(:last-child) {
+    margin-bottom: 1.25rem;
+  }
+
+  .other-articles__button {
+    width: 100%;
+    font-size: 0.875rem;
   }
 
   .contacts__top {
@@ -3560,6 +3776,14 @@ h6 {
     color: #fff;
   }
 
+  .spoller-row__title:hover {
+    color: var(--main-red-hover2);
+  }
+
+  .filter-block__button:hover {
+    color: var(--main-red-hover2);
+  }
+
   .menu__link:hover {
     color: var(--main-red-hover2);
   }
@@ -3632,6 +3856,11 @@ h6 {
 
   .article__back:hover .arrow-left-icon {
     background: #fff;
+  }
+
+  .other-articles__button:hover {
+    background: rgba(255, 3, 3, 0.1);
+    color: var(--main-red-default);
   }
 
   .contacts__back:hover {

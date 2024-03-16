@@ -1313,6 +1313,10 @@
         if (closeNotification) closeNotification.addEventListener("click", (function(e) {
             document.documentElement.classList.remove("item-added");
         }));
+        const sortButton = document.querySelector(".filter-block__button");
+        if (sortButton) sortButton.addEventListener("click", (() => {
+            sortButton.classList.toggle("active");
+        }));
         window["FLS"] = false;
         isWebp();
         addTouchClass();
